@@ -4,7 +4,7 @@ import { useWishlist } from "@/lib/store/wishlist";
 const NavBar = () => {
   const items = useWishlist((s) => s.items);
   return (
-    <nav className="flex w-full py-4 px-5 md:px-10 fixed top-0 left-0 justify-between">
+    <nav className="flex w-full py-4 px-5 md:px-10 fixed top-0 left-0 justify-between z-50 bg-black">
       <a href={"/"}>Wishlist App</a>
       <div className="flex gap-x-4">
         <a
