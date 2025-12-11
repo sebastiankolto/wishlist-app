@@ -32,7 +32,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
 
   return (
     <Link href={`/product/${product.id}`}>
-      <div className="w-full flex flex-col bg-white/5 p-6 gap-y-4 rounded-xl relative justify-between">
+      <div className="w-full flex flex-col bg-white/5 p-6 gap-y-4 rounded-xl relative justify-between text-white">
         <div className="flex aspect-[1/1] items-center justify-center">
           <Image
             src={product.image}

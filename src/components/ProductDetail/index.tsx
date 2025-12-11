@@ -26,9 +26,9 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
     setMounted(true);
   }, []);
   return (
-    <div className="pt-20 px-5 md:px-10">
+    <div className="pt-20 px-5 md:px-10 bg-black">
       <BackButton />
-      <div className="w-full items-center mx-auto max-w-[640px] mt-16 flex flex-col bg-white/5 p-8 gap-y-8 rounded-xl relative justify-between">
+      <div className="w-full text-white items-center mx-auto max-w-[640px] mt-16 flex flex-col bg-white/5 p-8 gap-y-8 rounded-xl relative justify-between">
         <Image
           src={product.image}
           width={300}

@@ -5,7 +5,11 @@ const BackButton = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  return <button onClick={() => router.back()}>← Back</button>;
+  return (
+    <button className="text-white cursor-pointer" onClick={() => router.back()}>
+      ← Back
+    </button>
+  );
 };
 
 export default BackButton;

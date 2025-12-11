@@ -6,7 +6,7 @@ export default function WishList() {
   const items = useWishlist((s) => s.items);
   const clearWishlist = useWishlist((s) => s.clearWishlist);
   return (
-    <div className="min-h-screen flex flex-col items-center gap-y-10 mt-10 bg-black px-5 md:px-10 py-5 md:py-10">
+    <div className="min-h-screen text-white flex flex-col items-center gap-y-10 mt-10 bg-black px-5 md:px-10 py-5 md:py-10">
       <div className="flex justify-between items-center w-full">
         <BackButton />
         <h2>Wishlist screen</h2>

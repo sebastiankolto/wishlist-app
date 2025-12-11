@@ -24,19 +24,19 @@ const Products = () => {
   }, []);
 
   if (loading) {
-    return <p className="text-white text-center mt-10">Loading products...</p>;
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-black">
+        <p className="text-white text-xl">Loading products...</p>
+      </div>
+    );
   }
 
   return (
     <div className="min-h-screen mt-10 bg-black flex-wrap grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-5 md:px-10 py-5 md:py-10">
       {pathname !== "/" && <BackButton />}
-      {loading ? (
-        <p className="text-white text-center mt-10">Loading products...</p>
-      ) : (
-        products.map((product) => {
-          return <ProductCard key={product.id} product={product} />;
-        })
-      )}
+      {products.map((product) => {
+        return <ProductCard key={product.id} product={product} />;
+      })}
     </div>
   );
 };
