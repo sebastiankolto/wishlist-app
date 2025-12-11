@@ -11,7 +11,7 @@ async function getProduct(id: string) {
 }
 
 export default async function ProductPage({ params }: Props) {
-  const { id } = await params;
+  const { id } = params;
   const product = await getProduct(id);
 
   return <ProductDetail product={product} />;
